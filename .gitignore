@@ -1,0 +1,4 @@
+.nextflow/
+.DS_Store/
+batch.csv/
+batch_2.csv/
