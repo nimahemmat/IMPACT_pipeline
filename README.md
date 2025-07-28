@@ -79,11 +79,11 @@ pipeDir=/to/dir/IMPACT_pipeline
 # Run data
 nextflow run ${pipeDir}/IMPACT.nf \
     -config ${pipeDir}/params.config \
-    --batchFile /scratch/users/nhemmat/MultiVarCallernf/batch.csv \
-    --tmpDir /scratch/users/nhemmat/tmp_pipeline/tmp \
-    --outputDir /researchers/nima.hemmat/Brior_IMPACT_new \
+    --batchFile ${pipeDir}/batch.csv \
+    --tmpDir ${pipeDir}/tmp \
+    --outputDir /dir/to/outputs \
     --runCNV true \
-    -work-dir /scratch/users/nhemmat/tmp_pipeline \
+    -work-dir ${pipeDir}/work \
     -resume
 ```
 `--batchFile` should be set to the directotry of `.csv` input file.
